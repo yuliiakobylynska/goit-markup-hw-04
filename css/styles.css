@@ -92,18 +92,17 @@ ol {
 }
 .header-menu-link {
   padding: 24px 0;
-  color: var(--navy-blue, #2e2f42);
+  color: var(--ocean, #404bbf);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-menu-item {
   padding: 24px 0;
-  position: relative;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-menu-link:hover,
 .header-menu-link:active,
@@ -323,9 +322,10 @@ ol {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-team-section {
-  fill: var(--cloud, #f4f4fd);
+.team-link-icon {
+  background-color: var(--cloud, #f4f4fd);
 }
 .icon-team-icon:hover,
 .icon-team-icon:focus {
@@ -379,6 +379,8 @@ ol {
   align-items: center;
   justify-content: center;
   color: var(--light-slate, #8e8f99);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer {
   padding-top: 100px;
@@ -433,6 +435,7 @@ ol {
   justify-content: center;
   border-radius: 50%;
   background-color: var(--iris, #4d5ae5);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons-list-footer {
   display: flex;
@@ -465,6 +468,10 @@ ol {
   padding: 12px 24px;
   border: 1px solid var(--cornflower, #e7e9fc);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-info:hover,
 .btn-info:active,
@@ -523,6 +530,7 @@ ol {
 }
 .section-info-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-cover-wrap {
   position: relative;
@@ -539,14 +547,16 @@ ol {
   letter-spacing: 0.02em;
   padding: 40px 32px;
   background-color: var(--iris, #4d5ae5);
-  transform: translateY(100%);
-  transition: transform 250ms linear;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-info-link:hover,
 .section-info-link:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.section-cover-text:hover,
+.section-cover-text:focus {
   transform: translateY(0%);
 }
 .img {
@@ -597,6 +607,8 @@ ol {
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: var(--ocean, #404bbf);
+  border: none;
+  fill: #ffffff;
 }
 .icons-modal-modal {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
