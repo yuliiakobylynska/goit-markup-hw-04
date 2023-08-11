@@ -63,7 +63,7 @@ ol {
   border-radius: 2px;
   left: 0;
   bottom: -1px;
-  background-color: var(--white, #fff);
+  background-color: var(--ocean, #404bbf);
   animation-iteration-count: infinite;
 }
 .address {
@@ -94,7 +94,7 @@ ol {
 }
 .header-menu-link {
   padding: 24px 0;
-  color: var(--navyblue, #2e2f42);
+  color: var(--ocean, #404bbf);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
