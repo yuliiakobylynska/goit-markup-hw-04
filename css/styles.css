@@ -63,7 +63,8 @@ ol {
   border-radius: 2px;
   left: 0;
   bottom: -1px;
-  background-color: var(--ocean, #404bbf);
+  background-color: var(--white, #fff);
+  animation-iteration-count: infinite;
 }
 .address {
   font-style: normal;
@@ -93,7 +94,7 @@ ol {
 }
 .header-menu-link {
   padding: 24px 0;
-  color: var(--ocean, #404bbf);
+  color: var(--navyblue, #2e2f42);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -103,6 +104,12 @@ ol {
 }
 .header-menu-item {
   padding: 24px 0;
+}
+.header-menu-link:hover::after,
+.header-menu-link:active::after,
+.header-menu-link:focus::after {
+  background-color: var(--ocean, #404bbf);
+  color: var(--ocean, #404bbf);
 }
 .header-menu-link:hover,
 .header-menu-link:active,
@@ -143,6 +150,7 @@ ol {
   background-size: cover;
   display: block;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .section {
@@ -295,7 +303,7 @@ ol {
 }
 .text-team-text {
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .team-text {
   color: var(--slate, #434455);
